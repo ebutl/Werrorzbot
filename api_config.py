@@ -72,6 +72,15 @@ def get_site_enabled():
     return _current_site_enabled
 
 
+# ── Aliases — used by sh.py / msh.py / sites.py ──
+def get_api_endpoint():
+    return get_current_endpoint()
+
+
+def is_site_enabled():
+    return get_site_enabled()
+
+
 def get_api_timeout():
     return API_TIMEOUT
 
